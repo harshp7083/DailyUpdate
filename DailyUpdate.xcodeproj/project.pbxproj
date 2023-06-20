@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		164651A72A364F5E008381AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651A62A364F5E008381AD /* AppDelegate.swift */; };
 		164651A92A364F5E008381AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651A82A364F5E008381AD /* SceneDelegate.swift */; };
-		164651AB2A364F5E008381AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651AA2A364F5E008381AD /* ViewController.swift */; };
+		164651AB2A364F5E008381AD /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651AA2A364F5E008381AD /* LogInViewController.swift */; };
 		164651AE2A364F5E008381AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164651AC2A364F5E008381AD /* Main.storyboard */; };
 		164651B02A364F5F008381AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164651AF2A364F5F008381AD /* Assets.xcassets */; };
 		164651B32A364F5F008381AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164651B12A364F5F008381AD /* LaunchScreen.storyboard */; };
 		164651BE2A364F5F008381AD /* DailyUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651BD2A364F5F008381AD /* DailyUpdateTests.swift */; };
 		164651C82A364F5F008381AD /* DailyUpdateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651C72A364F5F008381AD /* DailyUpdateUITests.swift */; };
 		164651CA2A364F5F008381AD /* DailyUpdateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651C92A364F5F008381AD /* DailyUpdateUITestsLaunchTests.swift */; };
+		167B57482A38E4AB00964DFD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 167B57472A38E4AB00964DFD /* Lottie */; };
+		167B574A2A38E58C00964DFD /* startAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 167B57492A38E58C00964DFD /* startAnimation.json */; };
+		16DACBA72A41F569008064CD /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 16DACBA62A41F569008064CD /* IQKeyboardManagerSwift */; };
+		16DACBAB2A41FBB7008064CD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DACBAA2A41FBB7008064CD /* SignUpViewController.swift */; };
+		16DACBAF2A41FEAB008064CD /* SignUpAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 16DACBAE2A41FEAB008064CD /* SignUpAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		164651A32A364F5E008381AD /* DailyUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164651A62A364F5E008381AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164651A82A364F5E008381AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		164651AA2A364F5E008381AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		164651AA2A364F5E008381AD /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		164651AD2A364F5E008381AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		164651AF2A364F5F008381AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164651B22A364F5F008381AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		164651C32A364F5F008381AD /* DailyUpdateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyUpdateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		164651C72A364F5F008381AD /* DailyUpdateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyUpdateUITests.swift; sourceTree = "<group>"; };
 		164651C92A364F5F008381AD /* DailyUpdateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyUpdateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		167B57492A38E58C00964DFD /* startAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = startAnimation.json; path = ../../../../Downloads/startAnimation.json; sourceTree = "<group>"; };
+		16DACBAA2A41FBB7008064CD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		16DACBAE2A41FEAB008064CD /* SignUpAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SignUpAnimation.json; path = ../../../../Downloads/SignUpAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167B57482A38E4AB00964DFD /* Lottie in Frameworks */,
+				16DACBA72A41F569008064CD /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +111,12 @@
 			children = (
 				164651A62A364F5E008381AD /* AppDelegate.swift */,
 				164651A82A364F5E008381AD /* SceneDelegate.swift */,
-				164651AA2A364F5E008381AD /* ViewController.swift */,
-				164651AC2A364F5E008381AD /* Main.storyboard */,
+				167B57492A38E58C00964DFD /* startAnimation.json */,
+				16DACBAE2A41FEAB008064CD /* SignUpAnimation.json */,
+				164651D62A364F73008381AD /* Model */,
+				164651D72A364F7B008381AD /* View */,
+				164651D92A364F91008381AD /* Controller */,
 				164651AF2A364F5F008381AD /* Assets.xcassets */,
-				164651B12A364F5F008381AD /* LaunchScreen.storyboard */,
 				164651B42A364F5F008381AD /* Info.plist */,
 			);
 			path = DailyUpdate;
@@ -127,6 +139,31 @@
 			path = DailyUpdateUITests;
 			sourceTree = "<group>";
 		};
+		164651D62A364F73008381AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		164651D72A364F7B008381AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				164651AC2A364F5E008381AD /* Main.storyboard */,
+				164651B12A364F5F008381AD /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		164651D92A364F91008381AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				164651AA2A364F5E008381AD /* LogInViewController.swift */,
+				16DACBAA2A41FBB7008064CD /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +180,10 @@
 			dependencies = (
 			);
 			name = DailyUpdate;
+			packageProductDependencies = (
+				167B57472A38E4AB00964DFD /* Lottie */,
+				16DACBA62A41F569008064CD /* IQKeyboardManagerSwift */,
+			);
 			productName = DailyUpdate;
 			productReference = 164651A32A364F5E008381AD /* DailyUpdate.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +256,10 @@
 				Base,
 			);
 			mainGroup = 1646519A2A364F5E008381AD;
+			packageReferences = (
+				167B57462A38E4AB00964DFD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				16DACBA52A41F569008064CD /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 164651A42A364F5E008381AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167B574A2A38E58C00964DFD /* startAnimation.json in Resources */,
+				16DACBAF2A41FEAB008064CD /* SignUpAnimation.json in Resources */,
 				164651B32A364F5F008381AD /* LaunchScreen.storyboard in Resources */,
 				164651B02A364F5F008381AD /* Assets.xcassets in Resources */,
 				164651AE2A364F5E008381AD /* Main.storyboard in Resources */,
@@ -258,8 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				164651AB2A364F5E008381AD /* ViewController.swift in Sources */,
+				164651AB2A364F5E008381AD /* LogInViewController.swift in Sources */,
 				164651A72A364F5E008381AD /* AppDelegate.swift in Sources */,
+				16DACBAB2A41FBB7008064CD /* SignUpViewController.swift in Sources */,
 				164651A92A364F5E008381AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +650,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		167B57462A38E4AB00964DFD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		16DACBA52A41F569008064CD /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		167B57472A38E4AB00964DFD /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 167B57462A38E4AB00964DFD /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		16DACBA62A41F569008064CD /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16DACBA52A41F569008064CD /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1646519B2A364F5E008381AD /* Project object */;
 }

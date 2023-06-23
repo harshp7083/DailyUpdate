@@ -18,6 +18,9 @@
 		164651CA2A364F5F008381AD /* DailyUpdateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651C92A364F5F008381AD /* DailyUpdateUITestsLaunchTests.swift */; };
 		167B57482A38E4AB00964DFD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 167B57472A38E4AB00964DFD /* Lottie */; };
 		167B574A2A38E58C00964DFD /* startAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 167B57492A38E58C00964DFD /* startAnimation.json */; };
+		16BA99412A447BAF006C8B1E /* NewsDescCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA993F2A447BAF006C8B1E /* NewsDescCell.swift */; };
+		16BA99422A447BAF006C8B1E /* NewsDescCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BA99402A447BAF006C8B1E /* NewsDescCell.xib */; };
+		16BA99462A4483D4006C8B1E /* HeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA99452A4483D4006C8B1E /* HeadlineViewController.swift */; };
 		16DACBA72A41F569008064CD /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 16DACBA62A41F569008064CD /* IQKeyboardManagerSwift */; };
 		16DACBAB2A41FBB7008064CD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DACBAA2A41FBB7008064CD /* SignUpViewController.swift */; };
 		16DACBAF2A41FEAB008064CD /* SignUpAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 16DACBAE2A41FEAB008064CD /* SignUpAnimation.json */; };
@@ -55,6 +58,9 @@
 		164651C72A364F5F008381AD /* DailyUpdateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyUpdateUITests.swift; sourceTree = "<group>"; };
 		164651C92A364F5F008381AD /* DailyUpdateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyUpdateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		167B57492A38E58C00964DFD /* startAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = startAnimation.json; path = ../../../../Downloads/startAnimation.json; sourceTree = "<group>"; };
+		16BA993F2A447BAF006C8B1E /* NewsDescCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDescCell.swift; sourceTree = "<group>"; };
+		16BA99402A447BAF006C8B1E /* NewsDescCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDescCell.xib; sourceTree = "<group>"; };
+		16BA99452A4483D4006C8B1E /* HeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineViewController.swift; sourceTree = "<group>"; };
 		16DACBAA2A41FBB7008064CD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		16DACBAE2A41FEAB008064CD /* SignUpAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SignUpAnimation.json; path = ../../../../Downloads/SignUpAnimation.json; sourceTree = "<group>"; };
 		16DACBB12A4201D2008064CD /* startAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = startAnimation.json; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 			children = (
 				164651AC2A364F5E008381AD /* Main.storyboard */,
 				164651B12A364F5F008381AD /* LaunchScreen.storyboard */,
+				16BA993F2A447BAF006C8B1E /* NewsDescCell.swift */,
+				16BA99402A447BAF006C8B1E /* NewsDescCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 			children = (
 				164651AA2A364F5E008381AD /* LogInViewController.swift */,
 				16DACBAA2A41FBB7008064CD /* SignUpViewController.swift */,
+				16BA99452A4483D4006C8B1E /* HeadlineViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				167B574A2A38E58C00964DFD /* startAnimation.json in Resources */,
+				16BA99422A447BAF006C8B1E /* NewsDescCell.xib in Resources */,
 				16DACBAF2A41FEAB008064CD /* SignUpAnimation.json in Resources */,
 				164651B32A364F5F008381AD /* LaunchScreen.storyboard in Resources */,
 				164651B02A364F5F008381AD /* Assets.xcassets in Resources */,
@@ -317,9 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BA99462A4483D4006C8B1E /* HeadlineViewController.swift in Sources */,
 				164651AB2A364F5E008381AD /* LogInViewController.swift in Sources */,
 				164651A72A364F5E008381AD /* AppDelegate.swift in Sources */,
 				16DACBAB2A41FBB7008064CD /* SignUpViewController.swift in Sources */,
+				16BA99412A447BAF006C8B1E /* NewsDescCell.swift in Sources */,
 				164651A92A364F5E008381AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

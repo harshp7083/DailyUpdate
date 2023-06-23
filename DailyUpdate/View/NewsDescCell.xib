@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="center" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="83" id="KGk-i7-Jjw" customClass="NewsDescCell" customModule="DailyUpdate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="NewsDescCell" customModule="DailyUpdate" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="172"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xY7-bk-ad8">
+                        <rect key="frame" x="1" y="0.0" width="361" height="172"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-JF-qru">
+                                <rect key="frame" x="8.6666666666666572" y="5" width="344" height="162"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-gM-RDD">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="344" id="LCm-1g-GNC"/>
+                                            <constraint firstAttribute="height" constant="37" id="dQM-2x-jZ8"/>
+                                        </constraints>
+                                        <string key="text">Missing Titanic sub: Underwater noises detected during search - The Washington Post
+</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yJg-wP-KC6">
+                                        <rect key="frame" x="0.0" y="45" width="344" height="117"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Letter N Line" translatesAutoresizingMaskIntoConstraints="NO" id="2gQ-ff-neg">
+                                                <rect key="frame" x="0.0" y="0.0" width="116" height="117"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                                <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="116" id="Rkt-Ux-BM5"/>
+                                                    <constraint firstAttribute="height" constant="117" id="ylO-6e-VJo"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="iA3-5E-zAw">
+                                                <rect key="frame" x="124" y="13.333333333333336" width="220" height="103.66666666666666"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReN-fv-UJ4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="71.666666666666671"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="220" id="Hl5-EQ-MIA"/>
+                                                            <constraint firstAttribute="height" constant="87" id="ngL-ho-S0u"/>
+                                                        </constraints>
+                                                        <string key="text">Search efforts near the noises have so far been unsuccessful in locating the missing Titan submersible and its five-person crew, the Coast Guard said.,Search efforts near the noises have so far been unsuccessful in locating the missing </string>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-06-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tl-MG-cP4">
+                                                        <rect key="frame" x="0.0" y="84.666666666666657" width="220" height="19"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19" id="Xvr-7W-sZn"/>
+                                                            <constraint firstAttribute="width" constant="220" id="wbv-HP-5iS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="344" id="iZD-vs-ID1"/>
+                                            <constraint firstAttribute="height" constant="117" id="zd5-t4-N9t"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="361" id="SSV-p3-yPJ"/>
+                            <constraint firstItem="ofJ-JF-qru" firstAttribute="centerY" secondItem="xY7-bk-ad8" secondAttribute="centerY" id="WMl-BL-B77"/>
+                            <constraint firstItem="ofJ-JF-qru" firstAttribute="centerX" secondItem="xY7-bk-ad8" secondAttribute="centerX" id="X25-qp-jXJ"/>
+                            <constraint firstAttribute="height" constant="172" id="qSr-rM-EsU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xY7-bk-ad8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5hu-7T-wbr"/>
+                    <constraint firstItem="xY7-bk-ad8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="COU-MI-Cdw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="ReN-fv-UJ4" id="79i-cd-ill"/>
+                <outlet property="newsCellView" destination="xY7-bk-ad8" id="ZTb-tZ-QpV"/>
+                <outlet property="newsDate" destination="4Tl-MG-cP4" id="fBu-V2-Lh6"/>
+                <outlet property="newsImage" destination="2gQ-ff-neg" id="EYg-Lo-4El"/>
+                <outlet property="titleLabel" destination="1dx-gM-RDD" id="g86-T2-9PO"/>
+            </connections>
+            <point key="canvasLocation" x="380.91603053435114" y="176.05633802816902"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Letter N Line" width="842" height="596"/>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -11,7 +11,7 @@ class HeadlineViewController: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
-    let urlString:String = "https://newsapi.org/v2/top-headlines?country=us&apiKey=c90a8b87b5a346649d40fc0f1c65a646"
+    let urlString:String = "https://newsapi.org/v2/top-headlines?country=us&apiKey="
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class HeadlineViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: "NewsDescCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         // Do any additional setup after loading the view.
-        //performRequest(urlString)
+        performRequest(urlString)
         print("Hello world")
     }
     

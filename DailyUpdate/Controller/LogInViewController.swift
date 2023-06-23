@@ -17,6 +17,7 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("Login")
         animationView.layer.cornerRadius = 12
         animationView.contentMode = .scaleAspectFit
         animationView.animationSpeed = 0.8

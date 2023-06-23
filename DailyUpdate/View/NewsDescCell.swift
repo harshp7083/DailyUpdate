@@ -23,7 +23,7 @@ class NewsDescCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        newsImage.image = UIImage(named: "LetterNLine")
+//        newsImage.image = UIImage(named: "LetterNLine")
         
         
         

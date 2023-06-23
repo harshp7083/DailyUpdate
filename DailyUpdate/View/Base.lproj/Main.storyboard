@@ -259,12 +259,12 @@
         <scene sceneID="F4E-Dr-DOQ">
             <objects>
                 <viewController id="Gvf-Ai-aNi" customClass="HeadlineViewController" customModule="DailyUpdate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Fnt-nF-tuu">
+                    <view key="view" contentMode="scaleToFill" id="Fnt-nF-tuu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-Da-Eg3">
-                                <rect key="frame" x="0.0" y="103" width="393" height="750"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Headline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-wl-7cI">
                                         <rect key="frame" x="16" y="0.0" width="361" height="55"/>
@@ -277,10 +277,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="174" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-oe-2xw">
-                                        <rect key="frame" x="16" y="60" width="361" height="595"/>
+                                        <rect key="frame" x="16" y="60" width="361" height="594"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="595" id="MfZ-wl-Vgy"/>
                                             <constraint firstAttribute="width" constant="361" id="PKZ-al-yVa"/>
                                         </constraints>
                                         <sections/>
@@ -290,7 +289,7 @@
                                         </connections>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99e-fk-VXq">
-                                        <rect key="frame" x="0.0" y="660" width="393" height="90"/>
+                                        <rect key="frame" x="0.0" y="659" width="393" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="393" id="4sq-Tc-ga2"/>
                                             <constraint firstAttribute="height" constant="90" id="IBS-Mz-Wnj"/>
@@ -299,7 +298,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="DJH-QW-Bhd"/>
-                                    <constraint firstAttribute="height" constant="750" id="HFj-ST-XsR"/>
                                 </constraints>
                             </stackView>
                         </subviews>

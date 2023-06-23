@@ -38,7 +38,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yJg-wP-KC6">
                                         <rect key="frame" x="0.0" y="45" width="344" height="117"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Letter N Line" translatesAutoresizingMaskIntoConstraints="NO" id="2gQ-ff-neg">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2gQ-ff-neg">
                                                 <rect key="frame" x="0.0" y="0.0" width="116" height="117"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                 <color key="tintColor" systemColor="secondarySystemFillColor"/>
@@ -47,24 +47,23 @@
                                                     <constraint firstAttribute="height" constant="117" id="ylO-6e-VJo"/>
                                                 </constraints>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="iA3-5E-zAw">
-                                                <rect key="frame" x="124" y="13.333333333333336" width="220" height="103.66666666666666"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iA3-5E-zAw">
+                                                <rect key="frame" x="124" y="0.0" width="220" height="117"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReN-fv-UJ4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="71.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="87"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="220" id="Hl5-EQ-MIA"/>
                                                             <constraint firstAttribute="height" constant="87" id="ngL-ho-S0u"/>
                                                         </constraints>
-                                                        <string key="text">Search efforts near the noises have so far been unsuccessful in locating the missing Titan submersible and its five-person crew, the Coast Guard said.,Search efforts near the noises have so far been unsuccessful in locating the missing </string>
+                                                        <string key="text">https://newsapi.org/v2/top-headlines?country=us&amp;apiKey=c90a8b87b5a346649d40fc0f1c65a646 https://newsapi.org/v2/top-headlines?country=us&amp;apiKey=c90a8b87b5a346649d40fc0f1c65a646</string>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-06-21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tl-MG-cP4">
-                                                        <rect key="frame" x="0.0" y="84.666666666666657" width="220" height="19"/>
+                                                        <rect key="frame" x="0.0" y="89" width="220" height="28"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="19" id="Xvr-7W-sZn"/>
                                                             <constraint firstAttribute="width" constant="220" id="wbv-HP-5iS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
@@ -108,7 +107,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Letter N Line" width="842" height="596"/>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

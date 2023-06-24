@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1635AB9E2A47656700777954 /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635AB9D2A47656700777954 /* NewsManager.swift */; };
 		164651A72A364F5E008381AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651A62A364F5E008381AD /* AppDelegate.swift */; };
 		164651A92A364F5E008381AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651A82A364F5E008381AD /* SceneDelegate.swift */; };
 		164651AB2A364F5E008381AD /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164651AA2A364F5E008381AD /* LogInViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1635AB9D2A47656700777954 /* NewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
 		164651A32A364F5E008381AD /* DailyUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164651A62A364F5E008381AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164651A82A364F5E008381AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				16AE70F52A460A0D00762F86 /* NewsData.swift */,
+				1635AB9D2A47656700777954 /* NewsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1635AB9E2A47656700777954 /* NewsManager.swift in Sources */,
 				16BA99462A4483D4006C8B1E /* HeadlineViewController.swift in Sources */,
 				164651AB2A364F5E008381AD /* LogInViewController.swift in Sources */,
 				164651A72A364F5E008381AD /* AppDelegate.swift in Sources */,

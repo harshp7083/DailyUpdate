@@ -23,7 +23,10 @@ class NewsDescCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        newsImage.image = UIImage(named: "LetterNLine")
+        if let cellView = newsCellView{
+            cellView.layer.cornerRadius = 8
+        }
+     
         
         
         

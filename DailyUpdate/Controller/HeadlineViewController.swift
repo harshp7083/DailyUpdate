@@ -15,6 +15,7 @@ class HeadlineViewController: UIViewController {
     var newsMan = NewsManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "NewsDescCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
@@ -66,7 +67,14 @@ extension HeadlineViewController: UITableViewDataSource{
 extension HeadlineViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("selected")
+        if let url = URL(string: fetchedArticles[indexPath.row].url){
+            if #available(iOS 10, *){
+                UIApplication.shared.open(url)
+            }else{
+                UIApplication.shared.openURL(url)
+            }
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

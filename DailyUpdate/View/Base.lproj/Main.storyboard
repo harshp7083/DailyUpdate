@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -90,7 +91,7 @@
                                                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <segue destination="Gvf-Ai-aNi" kind="show" id="lsi-JP-WK1"/>
+                                                                    <segue destination="RoA-Th-HOO" kind="show" id="8Hb-zX-AgI"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -223,7 +224,7 @@
                                                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <segue destination="Gvf-Ai-aNi" kind="show" id="OiR-FB-MN7"/>
+                                                                    <segue destination="RoA-Th-HOO" kind="show" id="qgJ-jz-cO0"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -253,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoH-KW-Y6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3480" y="210"/>
+            <point key="canvasLocation" x="3972" y="280"/>
         </scene>
         <!--Daily Update-->
         <scene sceneID="F4E-Dr-DOQ">
@@ -277,7 +278,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="174" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-oe-2xw">
-                                        <rect key="frame" x="16" y="60" width="361" height="594"/>
+                                        <rect key="frame" x="16" y="60" width="361" height="689"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="361" id="PKZ-al-yVa"/>
@@ -288,13 +289,6 @@
                                             <outlet property="delegate" destination="Gvf-Ai-aNi" id="b1h-gt-4T3"/>
                                         </connections>
                                     </tableView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99e-fk-VXq">
-                                        <rect key="frame" x="0.0" y="659" width="393" height="90"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="393" id="4sq-Tc-ga2"/>
-                                            <constraint firstAttribute="height" constant="90" id="IBS-Mz-Wnj"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="DJH-QW-Bhd"/>
@@ -304,12 +298,15 @@
                         <viewLayoutGuide key="safeArea" id="kda-Zr-R1F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5dh-Da-Eg3" secondAttribute="bottom" id="Gsj-K9-VWD"/>
                             <constraint firstItem="5dh-Da-Eg3" firstAttribute="trailing" secondItem="kda-Zr-R1F" secondAttribute="trailing" id="Sy9-qG-5sq"/>
-                            <constraint firstAttribute="bottom" secondItem="5dh-Da-Eg3" secondAttribute="bottom" id="Zu2-BQ-5Fl"/>
                             <constraint firstItem="5dh-Da-Eg3" firstAttribute="leading" secondItem="kda-Zr-R1F" secondAttribute="leading" id="bNc-d9-iLP"/>
                             <constraint firstItem="5dh-Da-Eg3" firstAttribute="top" secondItem="kda-Zr-R1F" secondAttribute="top" id="pQm-mW-Scw"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="News" id="NML-xm-v75">
+                        <imageReference key="image" image="newspaper" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Daily Update" id="XsV-Df-aUO"/>
                     <connections>
                         <outlet property="tableView" destination="jVf-oe-2xw" id="2wj-IR-FHe"/>
@@ -317,7 +314,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUk-xp-oJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4355" y="-132"/>
+            <point key="canvasLocation" x="6673" y="-780"/>
+        </scene>
+        <!--Social-->
+        <scene sceneID="ea8-rC-oLa">
+            <objects>
+                <viewController id="Tdc-cb-B7W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zjd-ni-dwE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1Wj-ej-lZQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Social" springLoaded="YES" id="iLC-9a-gQT">
+                        <imageReference key="image" image="person.2" catalog="system" symbolScale="default" variableValue="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOn-Sa-xLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6673" y="-132"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="xgN-bc-Rga">
+            <objects>
+                <viewController id="rlG-8x-qFV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="az2-k9-AfI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BhP-8u-9R9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zMg-xS-KHN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVV-tU-V2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6673" y="551"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="isD-pQ-cmt">
+            <objects>
+                <tabBarController id="RoA-Th-HOO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gh3-rw-ieu"/>
+                    <tabBar key="tabBar" alpha="0.94999999999999996" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJR-57-bAX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="selectedImageTintColor" systemColor="placeholderTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gvf-Ai-aNi" kind="relationship" relationship="viewControllers" id="fn4-v8-93K"/>
+                        <segue destination="Tdc-cb-B7W" kind="relationship" relationship="viewControllers" id="U97-1L-kL5"/>
+                        <segue destination="rlG-8x-qFV" kind="relationship" relationship="viewControllers" id="mYj-DY-rMr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSQ-pF-3kO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5396" y="-132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O4J-3Y-5kd">
@@ -339,11 +391,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OiR-FB-MN7"/>
+        <segue reference="qgJ-jz-cO0"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="person.2" catalog="system" width="128" height="82"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>

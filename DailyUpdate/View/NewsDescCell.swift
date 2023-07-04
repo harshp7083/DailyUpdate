@@ -26,9 +26,7 @@ class NewsDescCell: UITableViewCell {
         if let cellView = newsCellView{
             cellView.layer.cornerRadius = 8
         }
-        
     }
-
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol NewsManagerDelegate{
     func didfetchArticles(articles: [Article])
@@ -68,8 +69,5 @@ struct NewsManager{
             return nil
         }
     }
-    
-    func downloadImage(from url: URL){
-        
-    }
+   
 }

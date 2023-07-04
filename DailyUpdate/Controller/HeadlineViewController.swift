@@ -11,6 +11,7 @@ class HeadlineViewController: UIViewController {
    
     @IBOutlet weak var tableView: UITableView!
     
+    var fetchedArticles = [Article]()
     var newsMan = NewsManager()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +24,40 @@ class HeadlineViewController: UIViewController {
         
         print("Hello world")
     }
+    
+    func downloadImage(from url: URL, cell: NewsDescCell){
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if error != nil{
+                print("error while fetching image")
+                return
+            }
+            
+            if let safeData = data{
+                DispatchQueue.main.async {
+                    cell.newsImage.image = UIImage(data: safeData)
+                    print("Image will be displayed")
+                }
+            }
+        }
+        task.resume()
+    }
 }
 
 // MARK: - TableDataSource
 extension HeadlineViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4;
+        return fetchedArticles.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! NewsDescCell
+            cell.titleLabel.text = self.fetchedArticles[indexPath.row].title
+            cell.descLabel.text = self.fetchedArticles[indexPath.row].description
+            cell.newsDate.text = "\(self.fetchedArticles[indexPath.row].publishedAt)"
+            if let url = URL(string: self.fetchedArticles[indexPath.row].urlToImage!){
+                self.downloadImage(from: url, cell: cell)
+            }
+        
         return cell;
     }
 }
@@ -52,9 +77,15 @@ extension HeadlineViewController:UITableViewDelegate{
 extension HeadlineViewController: NewsManagerDelegate{
     func didfetchArticles(articles: [Article]) {
         print("protocol working\n")
-        for art in articles {
-            print("\(art.title)\n")
+        DispatchQueue.main.async {
+            self.fetchedArticles = articles
+            print(articles.count)
+            self.tableView.reloadData()
         }
+        
+//        for art in articles {
+//            print("\(art.title)\n")
+//        }
     }
     
     func didEndWithError(error: Error) {

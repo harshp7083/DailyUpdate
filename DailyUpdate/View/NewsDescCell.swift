@@ -26,10 +26,6 @@ class NewsDescCell: UITableViewCell {
         if let cellView = newsCellView{
             cellView.layer.cornerRadius = 8
         }
-     
-        
-        
-        
         
     }
 

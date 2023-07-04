@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NewsManagerDelegate{
-    func didfetchArticles(_ newsManager:NewsManager, articles: [Article])
+    func didfetchArticles(articles: [Article])
     func didEndWithError(error: Error)
 }
 
@@ -37,7 +37,12 @@ struct NewsManager{
                 
                 if let safeData = data{
                     if let news = parseJSON(safeData){
-                        self.delegate?.didfetchArticles(self, articles: news)
+                        self.delegate?.didfetchArticles(articles: news)
+//                        for new in news{
+//                            print(new.title)
+//                            print("")
+//                        }
+                        
                     }else{
                         print("returned nil")
                     }
@@ -55,7 +60,6 @@ struct NewsManager{
             let decodeData = try decoder.decode(NewsData.self, from: newsData)
             let articleList:[Article] = decodeData.articles
             print("Parsing status:\(decodeData.status)\n")
-            
             
             return articleList
         }catch{

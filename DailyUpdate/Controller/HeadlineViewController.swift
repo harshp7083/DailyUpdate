@@ -18,14 +18,11 @@ class HeadlineViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: "NewsDescCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         // Do any additional setup after loading the view.
-        newsMan.fetchArticles(countryCode: "in")
         newsMan.delegate = self
+        newsMan.fetchArticles(countryCode: "in")
+        
         print("Hello world")
     }
-    
-    
-    
-
 }
 
 // MARK: - TableDataSource
@@ -53,16 +50,14 @@ extension HeadlineViewController:UITableViewDelegate{
 // MARK: - NewsManagerDelegate
 
 extension HeadlineViewController: NewsManagerDelegate{
-    func didfetchArticles(_ newsManager: NewsManager, articles: [Article]) {
+    func didfetchArticles(articles: [Article]) {
+        print("protocol working\n")
         for art in articles {
             print("\(art.title)\n")
         }
     }
     
-    
     func didEndWithError(error: Error) {
         print("Error ahahaha")
     }
-    
-    
 }

@@ -26,6 +26,7 @@ class HeadlineViewController: UIViewController {
         print("Hello world")
     }
     
+    /*Downloads the image from the imageUrl fetched, the cell to which the image need to be assigned will be passed and the url for particular cell*/
     func downloadImage(from url: URL, cell: NewsDescCell){
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if error != nil{
@@ -55,9 +56,12 @@ extension HeadlineViewController: UITableViewDataSource{
             cell.titleLabel.text = self.fetchedArticles[indexPath.row].title
             cell.descLabel.text = self.fetchedArticles[indexPath.row].description
             cell.newsDate.text = "\(self.fetchedArticles[indexPath.row].publishedAt)"
-            if let url = URL(string: self.fetchedArticles[indexPath.row].urlToImage!){
-                self.downloadImage(from: url, cell: cell)
-            }
+        if let urlSafe = self.fetchedArticles[indexPath.row].urlToImage, let url = URL(string: urlSafe){
+            self.downloadImage(from: url, cell: cell)
+        }
+//            if let url = URL(string: self.fetchedArticles[indexPath.row].urlToImage!){
+//                self.downloadImage(from: url, cell: cell)
+//            }
         
         return cell;
     }

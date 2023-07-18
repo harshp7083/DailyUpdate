@@ -27,7 +27,7 @@ This project was developed with the goal of aggregating posts from various socia
 ## Contributing
 
 
-Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+Contributions are always welcome! If you would like to contribute to this project, please follow these steps:
 
 * Fork the repository.
 * Create a new branch for your feature/bug fix.
